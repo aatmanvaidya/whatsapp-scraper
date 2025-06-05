@@ -17,8 +17,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "whatsapp-web.js": "latest",
+    "cli-progress": "^3.12.0",
+    "fs-extra": "latest",
     "qrcode-terminal": "latest",
-    "fs-extra": "latest"
+    "whatsapp-web.js": "latest"
   }
 }
