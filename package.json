@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-scrapper",
+  "version": "1.0.0",
+  "description": "A WhatsApp chat scraper that collects messages, images, and videos from WhatsApp chats",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "scraper",
+    "chat",
+    "messages",
+    "media"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "whatsapp-web.js": "latest",
+    "qrcode-terminal": "latest",
+    "fs-extra": "latest"
+  }
+}
