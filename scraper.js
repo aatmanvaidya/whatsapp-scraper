@@ -3,6 +3,7 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs-extra');
 const path = require('path');
 const cliProgress = require('cli-progress');
+require('dotenv').config();
 
 // Create output directories
 const outputDir = path.join(__dirname, 'output');
@@ -27,7 +28,13 @@ client.on('qr', (qr) => {
 
 // When ready
 client.on('ready', () => {
-    console.log('\n✅ Client is ready! You can now send !scrape [chat-id] to start scraping.');
+    console.log('\n✅ Client is ready!');
+    if (process.env.CHAT_ID) {
+        console.log(`\n🔎 CHAT_ID found in .env. Automatically scraping: ${process.env.CHAT_ID}`);
+        scrapeChat(process.env.CHAT_ID);
+    } else {
+        console.log('You can now send !scrape [chat-id] to start scraping, or set CHAT_ID in your .env for auto-scraping.');
+    }
 });
 
 // Download media helper

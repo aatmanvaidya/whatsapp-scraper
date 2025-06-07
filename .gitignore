@@ -3,3 +3,5 @@ node_modules/
 .wwebjs_auth/
 output/
 **.ipynb_checkpoints/
+**.env
+**.venv/
