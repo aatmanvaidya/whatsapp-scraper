@@ -5,6 +5,7 @@
   "main": "scraper.js",
   "scripts": {
     "start": "node scraper.js",
+    "scroll": "nodemon scroll.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,5 +23,8 @@
     "fs-extra": "latest",
     "qrcode-terminal": "latest",
     "whatsapp-web.js": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
